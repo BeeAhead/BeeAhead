@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BeeAhead — Education Tools for Busy Bees</title>
+<title>BeeAhead — AI Prompts for Real Estate Agents</title>
+<meta name="description" content="AI prompt packs built by a licensed real estate professional. One-time purchase, no subscription. Every prompt created with ethics and Fair Housing compliance in mind.">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
 <style>
@@ -25,15 +26,15 @@
     color: #fff;
   }
   .hero h1 {
-    font-size: 2.4em;
+    font-size: 2.2em;
     font-weight: 700;
     margin-bottom: 16px;
-    line-height: 1.3;
+    line-height: 1.4;
   }
   .hero p {
     font-size: 1.2em;
-    max-width: 600px;
-    margin: 0 auto 32px auto;
+    max-width: 640px;
+    margin: 0 auto;
     opacity: 0.95;
   }
 
@@ -41,97 +42,145 @@
     display: inline-block;
     background: #2C2C2C !important;
     color: #fff !important;
-    padding: 18px 48px !important;
-    font-size: 1.1em !important;
+    padding: 14px 32px !important;
+    font-size: 1em !important;
     font-weight: 700 !important;
     text-decoration: none !important;
     border-radius: 4px !important;
     letter-spacing: 0.5px !important;
   }
 
-  .product {
-    padding: 60px 40px;
-    max-width: 800px;
+  .series {
+    padding: 60px 40px 30px 40px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
   }
-  .product h2 {
+  .series h2 {
     font-size: 1.8em;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     color: #2C2C2C;
   }
-  .product p {
+  .series > p {
     font-size: 1.05em;
     line-height: 1.8;
     color: #444;
-    margin-bottom: 16px;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
   }
-
-  .features {
-    background: #fdf8f2;
-    padding: 60px 40px;
-    text-align: center;
-  }
-  .features h2 {
-    font-size: 1.6em;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #2C2C2C;
-  }
-  .features-grid {
+  .series-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
-    max-width: 900px;
-    margin: 0 auto;
   }
-  .feature-item {
-    background: #fff;
-    padding: 24px;
-    border-radius: 8px;
+  .volume-card {
+    background: #fdf8f2;
     border: 1px solid #f0e8d8;
+    border-radius: 8px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .feature-item h3 {
-    font-size: 1em;
+  .volume-card .vol-label {
+    font-size: 0.8em;
     font-weight: 600;
+    letter-spacing: 2px;
     color: #E8981D;
-    margin-bottom: 8px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
   }
-  .feature-item p {
-    font-size: 0.9em;
+  .volume-card h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .volume-card .vol-desc {
+    font-size: 0.92em;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    flex-grow: 1;
+  }
+  .volume-card .vol-price {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin-bottom: 18px;
+  }
+  .volume-card .vol-buttons { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+  .learn-link {
+    display: inline-block;
+    color: #E8981D;
+    font-weight: 600;
+    font-size: 0.95em;
+    text-decoration: none;
+  }
+  .learn-link:hover { text-decoration: underline; }
+  .coming-soon {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #E8981D;
+    color: #E8981D;
+    padding: 10px 24px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 4px;
   }
 
-  .cta {
+  .bundle {
     background: #2C2C2C;
-    padding: 70px 40px;
+    padding: 56px 40px;
     text-align: center;
     color: #fff;
+    margin-top: 50px;
   }
-  .cta h2 {
-    font-size: 1.8em;
+  .bundle h2 {
+    font-size: 1.7em;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
-  .cta p {
-    font-size: 1.1em;
-    margin-bottom: 32px;
+  .bundle p {
+    font-size: 1.05em;
+    margin-bottom: 28px;
     opacity: 0.85;
   }
-  .cta .payhip-buy-button {
+  .bundle .payhip-buy-button {
     background: #E8981D !important;
-    color: #fff !important;
     padding: 18px 48px !important;
     font-size: 1.1em !important;
-    font-weight: 700 !important;
-    border-radius: 4px !important;
   }
   .small-note {
     margin-top: 20px;
     font-size: 0.85em;
     opacity: 0.6;
+  }
+
+  .compliance {
+    padding: 44px 40px;
+    text-align: center;
+  }
+  .compliance p {
+    font-size: 1em;
+    color: #444;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+
+
+  .blink {
+    animation: beeblink 1.6s ease-in-out infinite;
+  }
+  @keyframes beeblink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.45; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .blink { animation: none; }
   }
 
   footer {
@@ -157,72 +206,67 @@
 <body>
 
 <header>
-  <img src="BeeAhead-Logo-FINAL.png" alt="BeeAhead — Education tools for busy bees">
+  <a href="/"><img src="https://beeahead.net/BeeAhead-Logo-FINAL.png" alt="BeeAhead — Education tools for busy bees"></a>
 </header>
 
 <section class="hero">
-  <h1>Stop Spending 45 Minutes<br>Writing Every Social Media Post.</h1>
-  <p>50 AI prompts designed specifically for licensed real estate agents — create consistent, professional content in minutes, not hours.</p>
-  <a href="https://payhip.com/b/PxUY4" class="payhip-buy-button" data-theme="none" data-product="PxUY4">Get Instant Access — $37</a>
+  <h1>Every other tool wants you to keep paying.<br>BeeAhead wants you to keep growing.</h1>
+  <p>AI prompt packs built to help you do your best marketing and communication all by yourself. You won’t have to rely on anyone else to build a clear, trustworthy social media presence, nor will you need generic tools that fail to build that image for you. You learn how to do it and grow on your own. Everything in just a one-time purchase. No subscription. Yours forever.</p>
 </section>
 
-<section class="product">
-  <h2>50 AI Prompts for Real Estate Agents<br>Social Media Edition</h2>
-  <p>Paste any prompt into ChatGPT, Claude, or Gemini. Fill in the brackets with your specific details. Review, lightly edit, and post.</p>
-  <p>Built by a licensed real estate professional with 30 years of marketing experience. Every prompt was created with ethics and Fair Housing compliance in mind.</p>
-</section>
+<section class="series">
+  <h2>The Real Estate AI Prompt Series</h2>
+  <p>Each volume is a complete, ready-to-use system. Paste any prompt into ChatGPT, Claude, or Gemini, fill in the brackets with your details, review, and post.</p>
+  <p>Instant digital download. Start using your prompts today.</p>
 
-<section class="features">
-  <h2>What Is Inside</h2>
-  <div class="features-grid">
-    <div class="feature-item">
-      <h3>Instagram</h3>
-      <p>10 prompts — listings, sold posts, market updates, education</p>
+  <div class="series-grid">
+
+    <div class="volume-card">
+      <div class="vol-label">Volume 1</div>
+      <h3>50 AI Prompts<br>Social Media Edition</h3>
+      <p class="vol-desc">Show up consistently on Instagram, Facebook, LinkedIn, and TikTok — without staring at a blank caption box ever again.</p>
+      <div class="vol-price">$37</div>
+      <div class="vol-buttons">
+        <a href="https://payhip.com/b/PxUY4" class="payhip-buy-button" data-theme="none" data-product="PxUY4">Get Volume 1 — $37</a>
+        <a href="/vol1" class="learn-link">See what's inside →</a>
+      </div>
     </div>
-    <div class="feature-item">
-      <h3>Facebook</h3>
-      <p>7 prompts — community posts, Lives, referral requests</p>
+
+    <div class="volume-card">
+      <div class="vol-label">Volume 2</div>
+      <h3>60 AI Prompts<br>Lead Generation &amp; Prospecting Edition</h3>
+      <p class="vol-desc">Turn your presence into leads — trust building, sphere of influence, buyer and seller lead generation, DM starters, and video scripts.</p>
+      <div class="vol-price">$47</div>
+      <div class="vol-buttons">
+        <!-- TODO: replace href and data-product with the Vol 2 Payhip product link when created -->
+        <a href="https://payhip.com/BeeAhead" class="payhip-buy-button" data-theme="none">Get Volume 2 — $47</a>
+        <a href="/vol2" class="learn-link">See what's inside →</a>
+      </div>
     </div>
-    <div class="feature-item">
-      <h3>LinkedIn</h3>
-      <p>6 prompts — investor content, relocation, data posts</p>
+
+    <div class="volume-card">
+      <div class="vol-label">Volume 3</div>
+      <h3>Listings &amp; Property Marketing Edition</h3>
+      <p class="vol-desc">The final volume of the trilogy — dedicated to listings and property marketing content.</p>
+      <div class="vol-price">&nbsp;</div>
+      <div class="vol-buttons">
+        <span class="coming-soon">Coming soon</span>
+      </div>
     </div>
-    <div class="feature-item">
-      <h3>TikTok</h3>
-      <p>6 scripts — neighborhood tours, myth-busting, day-in-the-life</p>
-    </div>
-    <div class="feature-item">
-      <h3>Video Scripts</h3>
-      <p>5 scripts — YouTube guides, buyer follow-ups, seller pre-listing</p>
-    </div>
-    <div class="feature-item">
-      <h3>Content Calendar</h3>
-      <p>4 frameworks — 30-day plan, weekly themes, Q4 planner</p>
-    </div>
-    <div class="feature-item">
-      <h3>Engagement</h3>
-      <p>4 templates — DM responses, comment replies, re-engagement</p>
-    </div>
-    <div class="feature-item">
-      <h3>Brand & Bio</h3>
-      <p>4 prompts — Instagram bio, LinkedIn summary, brand voice</p>
-    </div>
-    <div class="feature-item">
-      <h3>Stories & Reels</h3>
-      <p>4 prompts — behind the scenes, market tips, client wins</p>
-    </div>
-    <div class="feature-item">
-      <h3>Market Updates</h3>
-      <p>5 prompts — local data, buyer tips, seller guides</p>
-    </div>
+
   </div>
 </section>
 
-<section class="cta">
-  <h2>Ready to Be Ahead?</h2>
-  <p>Instant digital download. Start using your prompts today.</p>
-  <a href="https://payhip.com/b/PxUY4" class="payhip-buy-button" data-theme="none" data-product="PxUY4">Get Instant Access — $37</a>
+<section class="bundle">
+  <h2 class="blink">Get Both and Save</h2>
+  <p>Volume 1 + Volume 2 together — $84 of prompts for $77.</p>
+  <!-- TODO: replace href and data-product with the Bundle Payhip product link when created -->
+  <a href="https://payhip.com/BeeAhead" class="payhip-buy-button" data-theme="none">Get the Bundle — $77</a>
   <p class="small-note">Secure checkout powered by Stripe. Instant PDF delivery.</p>
+</section>
+
+<section class="compliance">
+  <p>Every prompt was created with ethics and Fair Housing compliance in mind. Built by a licensed real estate professional with 30 years of marketing experience for agents who are legally and ethically accountable for every word they publish.</p>
 </section>
 
 <footer>
